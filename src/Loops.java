@@ -1,8 +1,15 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Loops {
-    public static void main(String... args) {
+    public static void main(String... args) throws IOException {
 
-        int max = 5;
+        int max;
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Enter the number of max stars: ");
+        max = Integer.parseInt(br.readLine());
 
         for (int i = 1; i< 2*max; i++) {
             if (i <= max) {
