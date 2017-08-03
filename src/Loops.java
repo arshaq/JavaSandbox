@@ -4,7 +4,10 @@ import java.io.InputStreamReader;
 
 public class Loops {
     public static void main(String... args) throws IOException {
+        createDesign();
+    }
 
+    static void createDesign() throws IOException {
         int max;
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
